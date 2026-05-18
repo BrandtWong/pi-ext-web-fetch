@@ -1,0 +1,37 @@
+{
+  "name": "pi-ext-web-fetch",
+  "version": "0.1.0",
+  "description": "Web fetch and search tools for Pi coding agent \u2014 ext_web_fetch + ext_web_search",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "coding-agent",
+    "web-fetch",
+    "web-search",
+    "searxng"
+  ],
+  "files": [
+    "index.ts",
+    "tools/",
+    "fetcher/",
+    "config.ts",
+    "ui.ts",
+    "types.ts"
+  ],
+  "pi": {
+    "extensions": [
+      "index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "jsdom": "^26.1.0",
+    "turndown": "^7.2.0"
+  },
+  "license": "MIT",
+  "type": "module"
+}
